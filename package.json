@@ -1,7 +1,7 @@
 {
-  "name": "@gone-skiing/eslint-config-gs",
+  "name": "@gone-skiing/eslint-config",
   "version": "0.1.0",
-  "description": "eslint config ready to be used in multiple projects",
+  "description": "Example of shared eslint and prettier configs",
   "author": "Eugene Krylov",
   "license": "MIT",
   "repository": {
@@ -43,6 +43,6 @@
     "prepush": "npm run check"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+    "registry": "https://npm.pkg.github.com/gone-skiing"
   }
 }
