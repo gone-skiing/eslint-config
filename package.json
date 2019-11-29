@@ -1,0 +1,48 @@
+{
+  "name": "@gone-skiing/eslint-config-gs",
+  "version": "0.1.0",
+  "description": "eslint config ready to be used in multiple projects",
+  "author": "Eugene Krylov",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gone-skiing/eslint-config-gs"
+  },
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "prettier.config.js"
+  ],
+  "peerDependencies": {
+    "babel-eslint": "10.0.3",
+    "eslint": "6.7.1",
+    "prettier": "1.19.1"
+  },
+  "dependencies": {
+    "babel-eslint": "10.0.3",
+    "eslint": "6.7.1",
+    "eslint-config-airbnb": "18.0.1",
+    "eslint-config-prettier": "6.7.0",
+    "eslint-plugin-import": "2.18.2",
+    "eslint-plugin-jest": "23.1.0",
+    "eslint-plugin-jsx-a11y": "6.2.3",
+    "eslint-plugin-prettier": "3.1.1",
+    "eslint-plugin-react": "7.17.0",
+    "eslint-plugin-react-hooks": "1.7.0",
+    "husky": "3.1.0",
+    "prettier": "1.19.1",
+    "typescript": "2.9.2"
+  },
+  "scripts": {
+    "check": "npm run check:eslint && npm run check:prettier",
+    "fix": "npm run fix:eslint && npm run fix:prettier",
+    "check:prettier": "prettier --check '**/*.js'",
+    "fix:prettier": "prettier --write '**/*.js'",
+    "check:eslint": "eslint .",
+    "fix:eslint": "eslint . --fix",
+    "prepush": "npm run check"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
+}
