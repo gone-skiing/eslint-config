@@ -1,6 +1,6 @@
 {
   "name": "@gone-skiing/eslint-config",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Example of shared eslint and prettier configs",
   "author": "Eugene Krylov",
   "license": "MIT",
@@ -13,11 +13,6 @@
     "index.js",
     "prettier.config.js"
   ],
-  "peerDependencies": {
-    "babel-eslint": "10.0.3",
-    "eslint": "6.7.2",
-    "prettier": "1.19.1"
-  },
   "dependencies": {
     "babel-eslint": "10.0.3",
     "eslint": "6.7.2",
