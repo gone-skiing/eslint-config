@@ -39,10 +39,14 @@
     "check:prettier": "prettier --check '**/*.js'",
     "fix:prettier": "prettier --write '**/*.js'",
     "check:eslint": "eslint .",
-    "fix:eslint": "eslint . --fix",
-    "prepush": "npm run check"
+    "fix:eslint": "eslint . --fix"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/gone-skiing"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm run check"
+    }
   }
 }
