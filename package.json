@@ -6,7 +6,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/gone-skiing/eslint-config-gs"
+    "url": "https://github.com/gone-skiing/eslint-config"
   },
   "main": "index.js",
   "files": [
@@ -42,7 +42,7 @@
     "fix:eslint": "eslint . --fix"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@gone-skiing"
+    "registry": "https://npm.pkg.github.com/gone-skiing"
   },
   "husky": {
     "hooks": {
