@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config",
+  "name": "@gone-skiing/eslint-config",
   "version": "0.1.0",
   "description": "Example of shared eslint and prettier configs",
   "author": "Eugene Krylov",
