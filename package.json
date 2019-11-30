@@ -42,7 +42,7 @@
     "fix:eslint": "eslint . --fix"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/gone-skiing"
+    "registry": "https://npm.pkg.github.com/@OWNER"
   },
   "husky": {
     "hooks": {
