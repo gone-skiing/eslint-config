@@ -2,24 +2,14 @@ name: build
 on: [push]
 jobs:
   check:
+    if: (!startsWith(github.ref, 'refs/tags/'))
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        if: (!startsWith(github.ref, 'refs/tags/'))
-        uses: actions/checkout@v1
-
-      - name: Setup
-        if: success()
-        uses: actions/setup-node@v1
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
         with:
           node-version: 8
           registry-url: 'https://npm.pkg.github.com'
           scope: '@gone-skiing'
-
-      - name: Install
-        if: success()
-        run: npm ci
-
-      - name: Check
-        if: success()
-        run: npm run check
+      - run: npm ci
+      - run: npm run check
