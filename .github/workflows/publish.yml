@@ -1,0 +1,17 @@
+name: publish
+on: [release]
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 8
+          registry-url: 'https://npm.pkg.github.com'
+          scope: '@gone-skiing'
+      - run: npm ci
+      - run: npm run check
+      - run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
