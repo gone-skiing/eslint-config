@@ -1,11 +1,9 @@
 name: build
-on:
-  push:
-    tags-ignore:
-      - 'v*'
+on: [push]
 jobs:
   check:
     runs-on: ubuntu-latest
+    if: ! startsWith(github.ref, 'refs/tags/')
     steps:
       - uses: actions/checkout@v1
       - uses: actions/setup-node@v1
