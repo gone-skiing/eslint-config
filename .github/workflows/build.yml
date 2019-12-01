@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        if: startsWith(github.ref, 'refs/tags/')
+        if: (!startsWith(github.ref, 'refs/tags/'))
         uses: actions/checkout@v1
 
       - name: Setup
