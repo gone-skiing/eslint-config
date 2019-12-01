@@ -34,13 +34,17 @@
     "prettier": "1.19.1",
     "typescript": "3.7.2"
   },
+  "devDependencies": {
+    "standard-version": "7.0.1"
+  },
   "scripts": {
     "check": "npm run check:eslint && npm run check:prettier",
     "fix": "npm run fix:eslint && npm run fix:prettier",
     "check:prettier": "prettier --check '**/*.js'",
     "fix:prettier": "prettier --write '**/*.js'",
     "check:eslint": "eslint .",
-    "fix:eslint": "eslint . --fix"
+    "fix:eslint": "eslint . --fix",
+    "release": "standard-version && git push --follow-tags"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/@OWNER"
