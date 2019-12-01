@@ -1,6 +1,13 @@
 module.export = {
-  extends: ['airbnb', 'prettier', 'prettier/react'],
-  plugins: ['prettier'],
+  extends: ['airbnb', 'airbnb/hooks', 'prettier', 'prettier/react'],
+  plugins: ['prettier', 'react'],
+  parser: 'babel-eslint',
+  parserOptions: {
+    ecmaVersion: 2018,
+    ecmaFeatures: {
+      jsx: true,
+    },
+  },
   rules: {
     'react/jsx-filename-extension': [
       1,
@@ -8,11 +15,8 @@ module.export = {
         extensions: ['.js', '.jsx'],
       },
     ],
-    'react/prop-types': 0,
-    'no-underscore-dangle': 0,
     'import/imports-first': ['error', 'absolute-first'],
     'import/newline-after-import': 'error',
-    'jsx-a11y/label-has-for': 'off',
   },
   globals: {
     window: true,
@@ -23,12 +27,11 @@ module.export = {
     Blob: true,
     navigator: true,
   },
-  parser: 'babel-eslint',
   overrides: [
     {
       files: ['**/*.test.js'],
       env: {
-        jest: true, // now **/*.test.js files' env has both es6 *and* jest
+        jest: true,
       },
       // Can't extend in overrides: https://github.com/eslint/eslint/issues/8813
       //"extends": ["plugin:jest/recommended"]
