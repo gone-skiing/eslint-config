@@ -1,6 +1,6 @@
 {
   "name": "@gone-skiing/eslint-config",
-  "version": "0.1.8",
+  "version": "0.2.0",
   "description": "Example of shared eslint and prettier configs",
   "author": "Eugene Krylov",
   "license": "MIT",
@@ -14,16 +14,22 @@
     "prettier-config.js"
   ],
   "dependencies": {
+    "@typescript-eslint/parser": "^2.9.0",
+    "@typescript-eslint/eslint-plugin": "2.9.0",
     "babel-eslint": "10.0.3",
     "eslint": "6.7.2",
     "eslint-config-airbnb": "18.0.1",
+    "eslint-config-airbnb-typescript": "6.3.1",
     "eslint-config-prettier": "6.7.0",
+    "eslint-plugin-eslint-comments": "3.1.2",
     "eslint-plugin-import": "2.18.2",
     "eslint-plugin-jest": "23.1.0",
     "eslint-plugin-jsx-a11y": "6.2.3",
     "eslint-plugin-prettier": "3.1.1",
+    "eslint-plugin-promise": "4.2.1",
     "eslint-plugin-react": "7.17.0",
     "eslint-plugin-react-hooks": "2.3.0",
+    "eslint-plugin-unicorn": "14.0.1",
     "husky": "3.1.0",
     "prettier": "1.19.1",
     "typescript": "3.7.2"
