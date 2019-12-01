@@ -1,4 +1,4 @@
-module.export = {
+module.exports = {
   extends: ['airbnb', 'airbnb/hooks', 'prettier', 'prettier/react'],
   parser: 'babel-eslint',
   plugins: ['prettier', 'react'],
@@ -39,7 +39,7 @@ module.export = {
         jest: true,
       },
       // Can't extend in overrides: https://github.com/eslint/eslint/issues/8813
-      //"extends": ["plugin:jest/recommended"]
+      // "extends": ["plugin:jest/recommended"]
       plugins: ['jest'],
       rules: {
         'jest/no-alias-methods': 'warn',
