@@ -1,10 +1,7 @@
 name: build
-on:
-  push:
-    tags-ignore:
-      - 'v*'
+on: [push]
 jobs:
-  check:
+  publish:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
@@ -15,3 +12,7 @@ jobs:
           scope: '@gone-skiing'
       - run: npm ci
       - run: npm run check
+      - run: npm publish
+        if: success() && startsWith(github.ref, 'refs/tags/v')
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
