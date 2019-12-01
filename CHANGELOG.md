@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.4](https://github.com/gone-skiing/eslint-config/compare/v0.2.3...v0.2.4) (2019-12-01)
+
+
+### Bug Fixes
+
+* **workflow:** Trigger build on push other than v* tags. Take 10. ([e83cd4b](https://github.com/gone-skiing/eslint-config/commit/e83cd4b1bd651ccd1454a386b3f51c41602dc44b))
+
 ### [0.2.3](https://github.com/gone-skiing/eslint-config/compare/v0.2.2...v0.2.3) (2019-12-01)
 
 
