@@ -1,9 +1,14 @@
 module.export = {
   extends: ['airbnb', 'airbnb/hooks', 'prettier', 'prettier/react'],
-  plugins: ['prettier', 'react'],
   parser: 'babel-eslint',
+  plugins: ['prettier', 'react'],
+  env: {
+    browser: true,
+    es6: true,
+  },
   parserOptions: {
     ecmaVersion: 2018,
+    sourceType: 'module',
     ecmaFeatures: {
       jsx: true,
     },
