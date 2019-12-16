@@ -14,7 +14,7 @@
     "prettier-config.js"
   ],
   "dependencies": {
-    "@typescript-eslint/parser": "^2.10.0",
+    "@typescript-eslint/parser": "^2.11.0",
     "@typescript-eslint/eslint-plugin": "2.11.0",
     "babel-eslint": "10.0.3",
     "eslint": "6.7.2",
