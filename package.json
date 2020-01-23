@@ -30,7 +30,7 @@
     "eslint-plugin-react": "7.18.0",
     "eslint-plugin-react-hooks": "2.3.0",
     "eslint-plugin-unicorn": "15.0.1",
-    "husky": "4.2.0",
+    "husky": "4.2.1",
     "prettier": "1.19.1",
     "typescript": "3.7.5"
   },
