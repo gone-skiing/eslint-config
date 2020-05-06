@@ -39,7 +39,7 @@
     "typescript": "3.8.3"
   },
   "devDependencies": {
-    "standard-version": "7.1.0"
+    "standard-version": "8.0.0"
   },
   "scripts": {
     "check": "npm run check:eslint && npm run check:prettier",
