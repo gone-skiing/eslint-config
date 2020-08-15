@@ -40,7 +40,7 @@
   },
   "devDependencies": {
     "json-schema": "^0.2.5",
-    "standard-version": "8.0.2"
+    "standard-version": "9.0.0"
   },
   "scripts": {
     "check": "npm run check:eslint && npm run check:prettier",
