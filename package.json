@@ -39,7 +39,7 @@
     "typescript": "4.1.3"
   },
   "devDependencies": {
-    "json-schema": "^0.2.5",
+    "json-schema": "^0.3.0",
     "standard-version": "9.1.0"
   },
   "scripts": {
