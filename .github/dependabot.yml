@@ -1,0 +1,52 @@
+version: 2
+registries:
+  npm-registry-npm-pkg-github-com:
+    type: npm-registry
+    url: https://npm.pkg.github.com
+    token: "${{secrets.NPM_REGISTRY_NPM_PKG_GITHUB_COM_TOKEN}}"
+
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "07:00"
+    timezone: America/New_York
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: eslint-plugin-jest
+    versions:
+    - 24.1.10
+    - 24.1.4
+    - 24.1.6
+    - 24.1.7
+    - 24.1.8
+    - 24.2.0
+    - 24.3.0
+    - 24.3.1
+    - 24.3.2
+    - 24.3.3
+  - dependency-name: eslint-plugin-react
+    versions:
+    - 7.23.1
+  - dependency-name: husky
+    versions:
+    - 4.3.8
+    - 5.2.0
+  - dependency-name: standard-version
+    versions:
+    - 9.1.1
+  - dependency-name: typescript
+    versions:
+    - 4.2.2
+  - dependency-name: eslint-plugin-promise
+    versions:
+    - 4.3.0
+  - dependency-name: eslint-config-airbnb-typescript
+    versions:
+    - 12.0.1
+    - 12.1.0
+    - 12.2.0
+    - 12.3.0
+  registries:
+  - npm-registry-npm-pkg-github-com
